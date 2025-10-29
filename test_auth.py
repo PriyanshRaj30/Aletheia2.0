@@ -213,7 +213,6 @@ def auth_callback():
         
         # Get or create user in database
         get_or_create_user(response.user)
-        
         return redirect('/dashboard')
         
     except Exception as e:
